@@ -1,0 +1,15 @@
+{% extends "_layouts/auth.njk" %}
+
+{% block body %}
+  <form action="/singin" method="post"  >
+    <img src="images/logo.svg" height ="42" />
+
+    <input type="email" name="email" placeholder="Seu e-mail" />
+    <input type="password" name="password" placeholder="Senha secreta" />
+
+    <button type="submit">Logar</button>
+
+  <a href="/singup">Criar Conta Grátis</a>
+  </form>
+
+ {% endblock %}
