@@ -12,6 +12,7 @@ const DashboardController = require("./app/controllers/DashboardController");
 const FileController = require("./app/controllers/FileController");
 const AppointmentController = require("./app/controllers/AppointmentController");
 const AvailableController = require("./app/controllers/AvailableController");
+const ScheduledController = require("./app/controllers/ScheduledController");
 
 routes.get("/", guestMiddleware, SessionController.create);
 routes.post("/singin", SessionController.store);
